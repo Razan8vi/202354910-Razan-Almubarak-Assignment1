@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razan Almubarak | Personal Portfolio</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- External stylesheet  -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+         <!-- Header and Navigation -->
+        <nav class="site-nav">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="hero-inner">
+            <h1>Razan</h1>
+            <p class="tagline">Software Engineering Student &mdash; Building Applications And Creating Meaningful Digital Experiences </p>
+
+           
+            <p id="greeting"></p>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ============ ABOUT ME SECTION ============ -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="about-content">
+        
+                <p>
+    Hi, I'm Razan, a Software Engineering student with an interest in web development.
+    I enjoy turning ideas into simple, functional websites, and I am continuously
+    developing my skills in HTML, CSS, and JavaScript. I am especially interested in
+    creating digital experiences that are usefu and easy to use.
+</p>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS SECTION ============ -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <ul class="projects-list">
+    <li class="project-card">
+        <img
+src="assets/images/project1.jpg"           
+ alt="  Tuwaiq Academy Bootcamp Project"
+            class="project-img"
+        >
+
+        <h3>Tuwaiq Academy Bootcamp Project</h3>
+
+        <p>
+            front end project developed during my training at Tuwaiq Academy.
+            It gave me mpre  experience in building structured web pages and
+            applying core web development concepts to a practical use case.
+        </p>
+    </li>
+
+    <li class="project-card">
+        <img
+src="assets/images/project2.jpg"            
+alt=" Personal Portfolio Website"
+            class="project-img"
+        >
+
+        <h3>Personal Portfolio Website</h3>
+
+        <p>
+            A  personal portfolio website created using HTML, CSS,
+            and JavaScript. It includes an About Me section, project cards, a
+            contact form with and a simple interactive feature.
+        </p>
+    </li>
+</ul>
+        </section>
+
+        <!-- ============ CONTACT SECTION ============ -->
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <form
+    id="contact-form"
+    class="contact-form"
+    onsubmit="showFormMessage(); return false;"
+>
+    <label for="name">Name:</label>
+    <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your name"
+        required
+    >
+
+    <label for="email">Email:</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="your.email@example.com"
+        required
+    >
+
+    <label for="message">Message:</label>
+    <textarea
+        id="message"
+        name="message"
+        rows="5"
+        placeholder="Write your message here..."
+        required
+    ></textarea>
+
+    <button type="submit">Send Message</button>
+
+    <p id="form-message" class="form-message"></p>
+</form>
+        </section>
+
+    </main>
+
+    <!-- Footer container -->
+    <footer class="site-footer">
+        <p>&copy;  Razan. Built for SWE 363 - Assignment 1.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
